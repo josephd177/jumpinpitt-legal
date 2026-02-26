@@ -5,82 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — JumpIn Pitt</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #121212;
-            color: #CCC;
-            line-height: 1.6;
-            padding: 24px;
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #FFB81C;
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-        .last-updated {
-            color: #888;
-            font-size: 12px;
-            margin-bottom: 24px;
-        }
-        .intro {
-            margin-bottom: 16px;
-            font-size: 14px;
-        }
-        h2 {
-            color: #FFB81C;
-            font-size: 14px;
-            font-weight: 800;
-            margin-top: 24px;
-            margin-bottom: 8px;
-            letter-spacing: 0.5px;
-        }
-        h3 {
-            color: #FFF;
-            font-size: 13px;
-            font-weight: 600;
-            margin-top: 12px;
-            margin-bottom: 4px;
-        }
-        p, ul {
-            font-size: 14px;
-            line-height: 22px;
-            margin-bottom: 8px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 4px;
-        }
-        a {
-            color: #FFB81C;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 20px; background: #0D0D0D; color: #CCC; line-height: 1.6; }
+        h1 { color: #FFB81C; font-size: 24px; }
+        h2 { color: #FFB81C; font-size: 16px; margin-top: 28px; }
+        h3 { color: #FFF; font-size: 14px; margin-top: 12px; }
+        p, li { font-size: 14px; color: #CCC; }
+        a { color: #FFB81C; }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: February 2026</p>
-
-    <p class="intro">JumpIn Pitt ("we," "us," or "our") operates the JumpIn Pitt mobile application. This Privacy Policy explains how we collect, use, and protect your information when you use the App.</p>
+    <p><em>Last updated: February 2026</em></p>
+    <p>JumpIn Pitt ("we," "us," or "our") operates the JumpIn Pitt mobile application. This Privacy Policy explains how we collect, use, and protect your information when you use the App.</p>
 
     <h2>1. Information We Collect</h2>
-
     <h3>Information you provide</h3>
     <ul>
         <li>Phone number (used to create and authenticate your account)</li>
         <li>Full name (entered during profile setup)</li>
         <li>Profile photo (optional, if you choose to upload one)</li>
     </ul>
-
     <h3>Information collected automatically</h3>
     <ul>
         <li>Location data (used for nearby venue discovery and proximity check-ins — only while the App is in use)</li>
@@ -107,12 +52,13 @@
     <ul>
         <li>Supabase (our backend database and authentication provider) — see supabase.com/privacy</li>
         <li>Expo (push notification delivery) — see expo.dev/privacy</li>
+        <li>Twilio (SMS verification code delivery) — see twilio.com/legal/privacy</li>
         <li>Apple (required for iOS distribution and push notification routing)</li>
     </ul>
     <p>Your full name may be visible to other users on the check-in leaderboard. Your phone number is never visible to other users.</p>
 
     <h2>4. Location Data</h2>
-    <p>We access your location only while the App is in use ("When In Use" permission). We do not track your location in the background. Location data is used in real time to detect proximity to venues and is not stored on our servers beyond what is needed to record a check-in event.</p>
+    <p>We access your location only while the App is in use ("When In Use" permission). We do not track your location in the background. While the App is open, your device's location is checked approximately every 3 seconds to detect proximity to partner venues. Location data is used in real time and is not stored on our servers beyond what is needed to record a check-in event.</p>
 
     <h2>5. Data Storage and Security</h2>
     <p>Your account data (name, phone, check-in records) is stored securely on Supabase infrastructure with row-level security policies that prevent other users from accessing your data. Profile photos are stored in Supabase Storage. We implement reasonable technical safeguards, but no system is completely secure.</p>
@@ -134,7 +80,7 @@
     <p>If you grant notification permission, we may send you push notifications about new venue deals, events, or app updates. You can opt out at any time by disabling notifications in your device Settings.</p>
 
     <h2>10. SMS Messaging</h2>
-    <p>When you sign up or log in, you consent to receive a one-time SMS verification code to authenticate your account. Message and data rates may apply. Message frequency: 1 per login. Reply STOP to opt out or HELP for support.</p>
+    <p>When you sign up or log in, you consent to receive a one-time SMS verification code to authenticate your account. Message and data rates may apply. Message frequency: 1 per login. Reply <strong>STOP</strong> to opt out or <strong>HELP</strong> for support. SMS consent is not a condition of purchase.</p>
 
     <h2>11. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the App. Continued use of the App after changes constitutes acceptance.</p>
@@ -143,7 +89,10 @@
     <p>This Privacy Policy is governed by the laws of the Commonwealth of Pennsylvania. Any disputes shall be resolved in Allegheny County, Pennsylvania.</p>
 
     <h2>13. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy or want to request deletion of your data, contact us at:</p>
-    <p><a href="mailto:support@jumpinpitt.com">support@jumpinpitt.com</a></p>
+    <p>If you have questions about this Privacy Policy or want to request deletion of your data, contact us at:<br>
+    <a href="mailto:support@jumpinpitt.com">support@jumpinpitt.com</a></p>
+
+    <h2>14. Menu &amp; Dietary Information</h2>
+    <p>Menu items, dietary labels, and nutritional information displayed in the App are provided by partner venues and have not been independently verified by JumpIn Pitt. We do not guarantee the accuracy, completeness, or currency of menu data. If you have food allergies or dietary restrictions, always confirm directly with the venue before ordering.</p>
 </body>
 </html>
